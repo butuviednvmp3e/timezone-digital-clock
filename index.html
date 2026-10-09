@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Catcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="top-bar">
+        <div>
+          <p class="label">Score</p>
+          <h1 id="score">0</h1>
+        </div>
+        <div>
+          <p class="label">Lives</p>
+          <h1 id="lives">3</h1>
+        </div>
+        <div>
+          <p class="label">Time</p>
+          <h1 id="time">60</h1>
+        </div>
+      </header>
+
+      <canvas id="gameCanvas" width="800" height="600" aria-label="Sky Catcher game board"></canvas>
+
+      <div class="controls">
+        <button id="startBtn">Start Game</button>
+      </div>
+
+      <div id="message" class="message">Catch the glowing stars and avoid the dark meteors.</div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
